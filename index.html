@@ -40,14 +40,101 @@
 
 <main>
     <section class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3em; font-weight: bold; margin-bottom: 0.5em;">
+            <h1>
                 Hola, soy Maria Belen Salazar Delgado
             </h1>
             <p>Diseñadora web y desarrolladora de software con pasión por crear experiencias digitales únicas.</p>
             <a href="#contacto" class="btn">Contáctame</a>
         </div>
     </section>
+    <style>
+    .hero {
+        position: relative;
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .hero-bg {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: url('img/hero-bg.jpg') center/cover no-repeat;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        text-align: center;
+        padding: 2em 1em;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        background: rgba(0,0,0,0.35);
+        border-radius: 1em;
+        box-sizing: border-box;
+    }
+    .hero-content h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        line-height: 1.1;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+        margin-bottom: 1.2em;
+    }
+    .hero-content .btn {
+        display: inline-block;
+        padding: 0.7em 2em;
+        background: #ff2d55;
+        color: #fff;
+        border-radius: 2em;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+    .hero-content .btn:hover {
+        background: #d81b4b;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 900px) {
+        .hero-content h1 {
+            font-size: 2em;
+        }
+        .hero-content p {
+            font-size: 1em;
+        }
+    }
+    @media (max-width: 600px) {
+        .hero {
+            min-height: 45vh;
+        }
+        .hero-content {
+            padding: 1.2em 0.5em;
+            max-width: 98vw;
+        }
+        .hero-content h1 {
+            font-size: 1.2em;
+        }
+        .hero-content p {
+            font-size: 0.95em;
+        }
+        .hero-content .btn {
+            font-size: 0.95em;
+            padding: 0.6em 1.2em;
+        }
+    }
+    </style>
 
   <!-- Mis servicios -->
   <section class="contenedor-servicios">
