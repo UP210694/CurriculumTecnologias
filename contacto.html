@@ -1,101 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Contacto</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
-    }
-    header {
-      text-align: left;
-      padding: 20px;
-      background-color: #0097A7;
-    }
-    header a {
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .team-section {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .team-section h2 {
-      margin-bottom: 10px;
-    }
-    .team-section p.subtitle {
-      color: #666;
-      font-size: 14px;
-    }
-    .team-members {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 30px;
-      flex-wrap: wrap;
-    }
-    .member {
-      text-align: center;
-      width: 200px;
-    }
-    .member img {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-    }
-    .member-name {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .role {
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    .description {
-      font-size: 12px;
-      color: #666;
-    }
-    .social-icons {
-      margin-top: 10px;
-    }
-    .social-icons i {
-      margin: 0 5px;
-    }
-    .quote {
-      border: 1px solid #aaa;
-      text-align: center;
-      margin: 40px auto;
-      padding: 40px 20px;
-      max-width: 500px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 12px;
-    }
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Salazar - DiseñadoraWeb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .social-icons a {
+            cursor: pointer;
+        }
+        .social-icons a svg {
+            transition: transform 0.2s;
+        }
+        .social-icons a:hover svg {
+            transform: scale(1.1);
+        }
+    </style>
+<header>
+    <div class="logo">
+        <span class="dot"></span>
+        <h1>
+            Maria Belen Salazar Delgado
+            <span class="role">Ingeniera en Sistemas Computacionales</span>
+        </h1>
+    </div>
 
-  <header>
-    <a href="index.html">← Volver al inicio</a>
-  </header>
+    <!-- Botón hamburguesa solo visible en móviles -->
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+    <nav class="nav" id="nav">
+        
+        <a href="index.html">← Volver Al Inicio</a>
+    </nav>
+</header>
+
+
+
+
+<main>
+
 
   <section class="team-section">
     <h2>Contacto</h2>
@@ -103,15 +46,16 @@
 
     
     <center>  
-      <div class="member">
-       <img src="IMG/tel.png" alt="Imagen de contacto">
-       
+    <div class="member"></div>
+        <div style="width: 100px; height: 100px; background: #946; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+            <img src="IMG/tel.png" alt="Imagen de contacto" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+        </div>
         <div class="member-name" style="color: #bf5c9b;">Maria Salazar</div>
         <div class="role">Ingeniera</div>
         <div class="Telefono">Telefono: 449 452 1111</div>
         <div class="correo">Correo: up210694@alumnos.upa.edu.mx </div>
         <div class="social-icons">🌐 📸 🐦 💼</div>
-      </div>
+    </div>
     </center>  
 
       
@@ -120,11 +64,50 @@
     Para llegar a un lugar,<br>
     debes dejar algo atrás
   </div>
+ 
+</main>
 
-  <footer>
-    Todos los derechos reservados<br>
-    Ingeniera Maria Belen Salazar Delgado <a href="#">Website Builder Software</a>.
-  </footer>
-
+    
+    <footer>
+        <div class="info">
+            <p><strong>Teléfono</strong><br>+01-214-207-7818</p>
+            <p><strong>Email</strong><br>up210694@alumnos.upa.edu.mx</p>
+            <p><strong>Sígueme en</strong><br>
+                <span class="social-icons">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/belen.delgado" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff2d55" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/lenn_dels/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff2d55" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M16.5 7.5l0 .01" />
+                        </svg>
+                    </a>
+                </span>
+            </p>
+        </div>
+        <p>
+        <div class="legal">
+            <p>Política de Privacidad<br>© 2025 Maria Belen Salazar Delgado</p>
+        </div>
+    </p>
+    </footer>
 </body>
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    toggle.addEventListener("click", () => {
+        if (nav.style.display === "flex") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "flex";
+        }
+    });
+</script>
 </html>
